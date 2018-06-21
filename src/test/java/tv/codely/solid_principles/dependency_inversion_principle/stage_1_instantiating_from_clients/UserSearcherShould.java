@@ -10,11 +10,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 final class UserSearcherShould {
     @Test
     void find_existing_users() {
+        UserSearcher userSearcher = new UserSearcher();
+
         // We would be coupled to the actual HardcodedInMemoryUsersRepository implementation.
         // We don't have the option to set test users as we would have to do if we had a real database repository.
         Integer existingUserId = 1;
-        UserSearcher userSearcher = new UserSearcher();
-
         Optional<User> expectedUser = Optional.of(new User(1, "Rafa"));
 
         assertEquals(expectedUser, userSearcher.search(existingUserId));
@@ -22,9 +22,9 @@ final class UserSearcherShould {
 
     @Test
     void not_find_non_existing_users() {
-        Integer nonExistingUserId = 5;
         UserSearcher userSearcher = new UserSearcher();
 
+        Integer nonExistingUserId = 5;
         Optional<User> expectedEmptyResult = Optional.empty();
 
         assertEquals(expectedEmptyResult, userSearcher.search(nonExistingUserId));
