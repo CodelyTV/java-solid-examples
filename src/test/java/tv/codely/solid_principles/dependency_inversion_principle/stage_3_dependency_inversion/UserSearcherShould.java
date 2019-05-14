@@ -21,9 +21,9 @@ final class UserSearcherShould {
         UsersRepository codelyTvStaffUsersRepository = new CodelyTvStaffUsersRepository();
         UserSearcher userSearcher = new UserSearcher(codelyTvStaffUsersRepository);
 
-        Optional<User> expectedUser = Optional.of(UserStub.rafa());
+        Optional<User> expectedUser = Optional.of(UserMother.rafa());
 
-        assertEquals(expectedUser, userSearcher.search(UserStub.RAFA_ID));
+        assertEquals(expectedUser, userSearcher.search(UserMother.RAFA_ID));
     }
 
     @Test

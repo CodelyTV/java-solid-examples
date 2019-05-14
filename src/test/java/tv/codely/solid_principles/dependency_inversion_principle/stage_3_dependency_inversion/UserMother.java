@@ -2,7 +2,7 @@ package tv.codely.solid_principles.dependency_inversion_principle.stage_3_depend
 
 import tv.codely.solid_principles.dependency_inversion_principle.User;
 
-final class UserStub {
+final class UserMother {
     static final int RAFA_ID = 1;
     static final int JAVI_ID = 2;
 
