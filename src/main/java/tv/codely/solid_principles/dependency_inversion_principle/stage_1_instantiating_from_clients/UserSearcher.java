@@ -5,7 +5,8 @@ import tv.codely.solid_principles.dependency_inversion_principle.User;
 import java.util.Optional;
 
 final class UserSearcher {
-    private HardcodedInMemoryUsersRepository usersRepository = new HardcodedInMemoryUsersRepository();
+    private HardcodedInMemoryUsersRepository usersRepository =
+        new HardcodedInMemoryUsersRepository();
 
     public Optional<User> search(Integer id) {
         return usersRepository.search(id);
