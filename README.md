@@ -6,7 +6,7 @@
 > ⚛ Learn SOLID principles by examples
 
 [![CodelyTV](https://img.shields.io/badge/codely-tv-green.svg?style=flat-square)](https://codely.tv)
-[![Workflow Status](https://github.com/CodelyTV/java-solid-examples/workflows/Main%20Workflow/badge.svg)](https://github.com/CodelyTV/java-basic-skeleton/actions)
+[![Workflow Status](https://github.com/CodelyTV/java-solid-examples/workflows/Main%20Workflow/badge.svg)](https://github.com/CodelyTV/java-solid-examples/actions)
 
 ## ℹ️ Introduction
 
