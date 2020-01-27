@@ -12,7 +12,7 @@ dependencies {
     implementation 'com.vlkan.log4j2:log4j2-logstash-layout:0.19'
 
     testCompile 'org.junit.jupiter:junit-jupiter-api:5.5.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.0'
 }
 
 test {
